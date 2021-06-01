@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 
+
+The MIT License (MIT)
+
+Copyright (c) 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Author: Muhammet Emin AKALAN
+
+-->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <!-- interface-license-type mit -->
+  <!-- interface-name Wallpaper downloader -->
+  <!-- interface-description Wallpaper downloader app -->
+  <!-- interface-authors Muhammet Emin AKALAN -->
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Wallpaper Downloader</property>
+    <property name="resizable">False</property>
+    <property name="window-position">center</property>
+    <property name="default-width">400</property>
+    <property name="icon">logo.svg</property>
+    <signal name="destroy" handler="Quit" swapped="no"/>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-start">15</property>
+        <property name="margin-end">15</property>
+        <property name="margin-top">15</property>
+        <property name="margin-bottom">15</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">12</property>
+        <child>
+          <object class="GtkImage">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="margin-bottom">3</property>
+            <property name="pixbuf">logo.svg</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="imageSourceProvider">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="active">0</property>
+            <items>
+              <item id="0" translatable="yes">WallpapersWide</item>
+              <item id="1" translatable="yes">WallpapersCraft</item>
+            </items>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="categories">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="active">0</property>
+            <items>
+              <item id="0" translatable="yes">aero</item>
+              <item id="1" translatable="yes">animals</item>
+              <item id="2" translatable="yes">architecture</item>
+              <item id="3" translatable="yes">army</item>
+              <item id="4" translatable="yes">artistic</item>
+              <item id="5" translatable="yes">awareness</item>
+              <item id="6" translatable="yes">black_and_white</item>
+              <item id="7" translatable="yes">cartoons</item>
+              <item id="8" translatable="yes">celebrities</item>
+              <item id="9" translatable="yes">city</item>
+              <item id="10" translatable="yes">computers</item>
+              <item id="11" translatable="yes">cute</item>
+              <item id="12" translatable="yes">elements</item>
+              <item id="13" translatable="yes">food_and_drink</item>
+              <item id="14" translatable="yes">funny</item>
+              <item id="15" translatable="yes">games</item>
+              <item id="16" translatable="yes">girls</item>
+              <item id="17" translatable="yes">holidays</item>
+              <item id="18" translatable="yes">love</item>
+              <item id="19" translatable="yes">motors</item>
+              <item id="20" translatable="yes">movies</item>
+              <item id="21" translatable="yes">music</item>
+              <item id="22" translatable="yes">nature</item>
+              <item id="23" translatable="yes">seasons</item>
+              <item id="24" translatable="yes">space</item>
+              <item id="25" translatable="yes">sports</item>
+              <item id="26" translatable="yes">travel</item>
+              <item id="27" translatable="yes">vintage</item>
+              <item id="28" translatable="yes">3d</item>
+              <item id="29" translatable="yes">60_favorites</item>
+              <item id="30" translatable="yes">abstract</item>
+              <item id="31" translatable="yes">animals</item>
+              <item id="32" translatable="yes">anime</item>
+              <item id="33" translatable="yes">art</item>
+              <item id="34" translatable="yes">black</item>
+              <item id="35" translatable="yes">cars</item>
+              <item id="36" translatable="yes">city</item>
+              <item id="37" translatable="yes">dark</item>
+              <item id="38" translatable="yes">fantasy</item>
+              <item id="39" translatable="yes">flowers</item>
+              <item id="40" translatable="yes">food</item>
+              <item id="41" translatable="yes">holidays</item>
+              <item id="42" translatable="yes">love</item>
+              <item id="43" translatable="yes">macro</item>
+              <item id="44" translatable="yes">minimalism</item>
+              <item id="45" translatable="yes">motorcycles</item>
+              <item id="46" translatable="yes">music</item>
+              <item id="47" translatable="yes">nature</item>
+              <item id="48" translatable="yes">other</item>
+              <item id="49" translatable="yes">smilies</item>
+              <item id="50" translatable="yes">space</item>
+              <item id="51" translatable="yes">sport</item>
+              <item id="52" translatable="yes">technologies</item>
+              <item id="53" translatable="yes">textures</item>
+              <item id="54" translatable="yes">vector</item>
+              <item id="55" translatable="yes">words</item>
+            </items>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBoxText" id="resolutions">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="active">0</property>
+            <items>
+              <item id="0" translatable="yes">1024x576</item>
+              <item id="1" translatable="yes">1152x648</item>
+              <item id="2" translatable="yes">1280x720</item>
+              <item id="3" translatable="yes">1366x768</item>
+              <item id="4" translatable="yes">1600x900</item>
+              <item id="5" translatable="yes">1920x1080</item>
+              <item id="6" translatable="yes">2560x1440</item>
+              <item id="7" translatable="yes">3840x2160</item>
+              <item id="8" translatable="yes">5120x2880</item>
+              <item id="9" translatable="yes">7680x4320</item>
+            </items>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">5</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkLabel" id="statusLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Wallpaper downloader app</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="infoLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">05akalan57@gmail.com</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkButton" id="DownloadBtn">
+                <property name="label" translatable="yes">Download</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="Download" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="CancelBtn">
+                <property name="label" translatable="yes">Stop</property>
+                <property name="visible">True</property>
+                <property name="sensitive">False</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <signal name="clicked" handler="Cancel" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">6</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
